@@ -41,9 +41,25 @@ function ateDez(n) {
     }
 }
 
+function areaOfSquare(side){
+    return `The area of the square is ${side*side}m²`;
+}
+
+function getSize(width, height, depth) {
+    let area = width * height;
+    let volume = width * height * depth;
+    let sizes = [area, volume];
+    return sizes;
+}
+var areaOne = getSize(3, 2, 3)[0];
+var volumeOne = getSize(3, 2, 3)[1];
+
 console.log(area(10,5));
 contagem(5);
 console.log(parOuImpar(2));
 console.log(diaDaSemana(4));
 ateDez(1);
+console.log(areaOfSquare(2));
+console.log(`The area of rectangle is ${areaOne}m².`);
+console.log(`The volume of rectangle is ${volumeOne}m³.`);
 
